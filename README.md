@@ -4,7 +4,7 @@ This repository contains the code for the paper submitted to ICRA 2023.
 
 [**Follow The Rules: Online Signal Temporal Logic Tree Search for Guided Imitation Learning in Stochastic Domains**](https://arxiv.org/abs/) 
 
-[Jasmine Jerry Aloor*](https://jaroan.github.io/jasminejerrya/), [Jay Patrikar*](https://jaypatrikar.me/), [Parv Kapoor](https://bradymoon.com/), [Jean Oh](https://www.cs.cmu.edu/~./jeanoh/) and [Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/).
+[Jasmine Jerry Aloor*](https://jaroan.github.io/jasminejerrya/), [Jay Patrikar*](https://jaypatrikar.me/), [Parv Kapoor](https://parvkpr.github.io/), [Jean Oh](https://www.cs.cmu.edu/~./jeanoh/) and [Sebastian Scherer](https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/).
 
 *equal contribution
 
