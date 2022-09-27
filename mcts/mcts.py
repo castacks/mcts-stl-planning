@@ -1,3 +1,5 @@
+"""Modified from https://github.com/suragnair/alpha-zero-general"""
+
 import numpy as np
 import scipy
 import math

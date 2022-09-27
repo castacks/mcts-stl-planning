@@ -35,14 +35,35 @@ cd dataset
 wget https://kilthub.cmu.edu/ndownloader/articles/14866251/versions/1
 ```
 
-Unzip files in place as required.
+Unzip dataset files in place as shown in the folder tree below.
+
+mcts-stl-planning/
+├─ dataset/
+│  ├─ 111_days/
+│  │  ├─ processed_data/
+│  │  │  ├─ test/
+│  │  │  ├─ train/
+├─ episodes/
+├─ gym/
+├─ images/
+├─ mcts/
+├─ model/
+├─ rtamt/
+├─ saved_models/
+├─ costmap.py
+├─ play.py
 
 
 ## MCTS Parameters
 
-The MCTS is implemented as a recursive function where each iteration ends with a new leaf that corresponds to an action in the trajectory library.  For running the algorithm, we can choose any dataset. For example, to test with 111days use: 
+The MCTS is implemented as a recursive function where each iteration ends with a new leaf that corresponds to an action in the trajectory library.  For running the algorithm, we can choose any dataset. 
+For example, to test with Behavior Cloning algorithm (BC) with 111_days use: 
 
-`python play.py --dataset_name 111days`
+`python play.py --dataset_name 111_days --algo BC --tcn_channel_size 256`
+
+To test with goalGAIL algorithm (goalGAIL) with 111_days use: 
+
+`python play.py --dataset_name 111_days --algo GAIL --tcn_channel_size 512`
 
 - `--checkpoint` Argument to set checkpoint for MCTS (default = `/episodes/`)
 - `--load_episodes` Argument to load episodes (default = `False`)
@@ -75,7 +96,7 @@ Training will use GPUs if available.
 Optional arguments can be given as following:
 
 - `--dataset_folder` sets the working directory for data. Default is current working directory (default = `/dataset/`). 
-- `--dataset_name` sets the data block to use (default = `111days`).
+- `--dataset_name` sets the data block to use (default = `111_days`).
 - `--models_folder` sets the directory for saved model. Default is saved_models directory (default = `/saved_models/`). 
 - `--model_weights` sets the model weight to be used (default = `model_111_days_4.pt`). !! Needs review
 - `--obs` observation length (default = `11`).
@@ -96,7 +117,7 @@ Optional arguments can be given as following:
 - `--tcn_kernels` The size of the kernel to use in each convolutional layer (default = `4`).
 - `--tcn_channel_size` The number of hidden units to use (default = `512`).
 - `--tcn_layers` The number of layers to use. (default = `2`)
-- `--mlp_layer`  The number of hidden units in the MLP decoder (default = `91`).
+- `--mlp_layer`  The number of hidden units in the MLP decoder (default, BC = `91`, goalGAIL = ).
 
 #### Model Testing
 
@@ -114,7 +135,11 @@ Optional arguments can be given as following:
 - `--epoch` Epoch to load the model. 
 
 
+## STL Library: RTAMT
 
+To install the RTAMT library for monitoring of Signal Temporal Logic (STL) [rtamt](https://github.com/nickovic/rtamt) follow the package's [installation procedure](https://github.com/nickovic/rtamt#installation)
+
+Additionally, if the antlr4 dependency throws an error, follow the [conda installation here](https://anaconda.org/conda-forge/antlr4-python3-runtime)
 
 ## TrajAir Dataset
 

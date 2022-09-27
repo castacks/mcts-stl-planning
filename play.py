@@ -123,7 +123,7 @@ if __name__ == '__main__':
 
     parser.add_argument('--checkpoint', type=str, default='/episodes/')
     parser.add_argument('--load_episodes', type=bool, default=False)
-    parser.add_argument('--base_path', type=str, default='/home/jay/AITF/aitf_mcts')
+    parser.add_argument('--base_path', type=str, default=os.getcwd())
     parser.add_argument('--algo', type=str, default='BC')
 
     parser.add_argument('--obs', type=int, default=11)
