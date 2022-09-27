@@ -37,6 +37,7 @@ wget https://kilthub.cmu.edu/ndownloader/articles/14866251/versions/1
 
 Unzip dataset files in place as shown in the folder tree below.
 
+```
 mcts-stl-planning/
 ├─ dataset/
 │  ├─ 111_days/
@@ -52,7 +53,7 @@ mcts-stl-planning/
 ├─ saved_models/
 ├─ costmap.py
 ├─ play.py
-
+```
 
 ## MCTS Parameters
 
