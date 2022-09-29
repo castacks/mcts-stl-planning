@@ -152,12 +152,21 @@ If you have any questions, please contact [jaypat@cmu.edu](mailto:jaypat@cmu.edu
 If you find this repository useful for your research, please cite the following paper:
 
 ```
-@misc{arxiv upload,
-      title={Follow The Rules: Online Signal Temporal Logic Tree Search for Guided Imitation Learning in Stochastic Domains}, 
-      author={Jasmine Jerry Aloor and Jay Patrikar and Parv Kapoor and Jean Oh and Sebastian Scherer},
-      year={2022},
-      eprint={ },
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@misc{https://doi.org/10.48550/arxiv.2209.13737,
+  doi = {10.48550/ARXIV.2209.13737},
+  
+  url = {https://arxiv.org/abs/2209.13737},
+  
+  author = {Aloor, Jasmine Jerry and Patrikar, Jay and Kapoor, Parv and Oh, Jean and Scherer, Sebastian},
+  
+  keywords = {Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {Follow The Rules: Online Signal Temporal Logic Tree Search for Guided Imitation Learning in Stochastic Domains},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {arXiv.org perpetual, non-exclusive license}
 }
 ```
